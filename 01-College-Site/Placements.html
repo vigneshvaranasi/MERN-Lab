@@ -4,14 +4,12 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>index</title>
-    <!-- <title>PVPSIT - Prasad V. Potluri Siddhartha Institute of Technology</title> -->
-    <link rel="stylesheet" href="style.css">
+    <title>Placements - PVPSIT</title>
     <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="style.css">
 </head>
 
-<body>
-
+<body class="bg-white font-sans leading-relaxed">
     <!-- Navbar -->
     <div class="flex flex-col md:flex-row justify-between px-3 py-4">
         <div class="flex justify-center md:justify-start items-center gap-2">
@@ -32,112 +30,142 @@
         </nav>
     </div>
 
-    <!-- Hero -->
-    <div>
-        <div class="m-5 rounded-lg sm:mx-16 mb-1 lg:mb-2 sm:mt-5">
-            <img src="assets/college.png" class="w-full rounded-lg sm:rounded-3xl overflow-hidden" alt="">
-        </div>
-        <div class="text-center">
-            <p class="text-lg text-gray-500 mx-5">PVP Siddhartha Institute of Technology, established in 1998</p>
-            <!-- <p class="text-lg text-gray-500">PVPSIT - A Premier Institution Known for Academic Excellence</p> -->
-        </div>
+    <div class="container mx-auto px-6 py-10">
+        <!-- About Us -->
+        <section class="mb-16">
+            <h2 class="text-3xl font-bold text-gray-800 text-center mb-8">About Us</h2>
+            <p class="text-gray-700 text-lg text-justify leading-relaxed">The Training and Placement Cell of PVP
+                Siddhartha is established with the sole aim of finding suitable employment opportunities for all the
+                eligible students. It caters to all the training requirements of students through highly experienced
+                faculty. The unique program of skill enhancement identifies and nurtures the talent in job aspirants and
+                ignites the young minds to capably and confidently face the recruitment drives.</p>
+            <p class="text-gray-700 text-lg text-justify leading-relaxed mt-4">Need-based curriculum that is specially
+                designed fine-tunes the student to the corporate requirements. The placement cell has state-of-the-art
+                infrastructure and rich ambiance to facilitate the training process. The students of PVP are provided
+                excellent training that enhances their potential and improves their confidence levels. The facilities
+                include a well-furnished auditorium, GD rooms, closed interview panels, and conference halls.</p>
+        </section>
+
+
+        <!-- Top Recruiters -->
+        <section class="mb-16">
+            <h2 class="text-3xl font-bold text-gray-800 text-center mb-8">Top Recruiters</h2>
+            <div class="flex flex-wrap justify-center items-center gap-4">
+                <div class="flex justify-center items-center mx-4">
+                    <img class="h-10 md:h-14" src="assets/companies/amazon.png" alt="Amazon">
+                </div>
+                <div class="flex justify-center items-center mx-4">
+                    <img class="h-8 md:h-14" src="assets/companies/tcs.png" alt="TCS">
+                </div>
+                <div class="flex justify-center items-center mx-4">
+                    <img class="h-6 md:h-10" src="assets/companies/capgemini.png" alt="Capgemini">
+                </div>
+                <div class="flex justify-center items-center mx-4">
+                    <img class="h-6 md:h-10" src="assets/companies/accenture.png" alt="Accenture">
+                </div>
+                <div class="flex justify-center items-center mx-4">
+                    <img class="h-6 md:h-12" src="assets/companies/walmart.png" alt="Walmart">
+                </div>
+                <div class="flex justify-center items-center mx-4">
+                    <img class="h-8 md:h-12" src="assets/companies/value labs.png" alt="Value Labs">
+                </div>
+            </div>
+        </section>
+
+        <!-- Campus Selections -->
+        <section class="mb-16">
+            <h2 class="text-3xl font-bold text-gray-800 text-center mb-8">Campus Selections (Yearwise)</h2>
+            <div class="overflow-x-auto">
+                <table class="table-auto w-full border-collapse border border-gray-300">
+                    <thead class="bg-blue-100">
+                        <tr>
+                            <th class="border border-gray-300 px-4 py-2 text-left">Academic Year</th>
+                            <th class="border border-gray-300 px-4 py-2 text-left">No. of Selections</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td class="border border-gray-300 px-4 py-2">2023-24</td>
+                            <td class="border border-gray-300 px-4 py-2">1005</td>
+                        </tr>
+                        <tr>
+                            <td class="border border-gray-300 px-4 py-2">2022-23</td>
+                            <td class="border border-gray-300 px-4 py-2">956</td>
+                        </tr>
+                        <tr>
+                            <td class="border border-gray-300 px-4 py-2">2021-22</td>
+                            <td class="border border-gray-300 px-4 py-2">1118</td>
+                        </tr>
+                        <tr>
+                            <td class="border border-gray-300 px-4 py-2">2020-21</td>
+                            <td class="border border-gray-300 px-4 py-2">954</td>
+                        </tr>
+                        <tr>
+                            <td class="border border-gray-300 px-4 py-2">2019-20</td>
+                            <td class="border border-gray-300 px-4 py-2">606</td>
+                        </tr>
+                        <tr>
+                            <td class="border border-gray-300 px-4 py-2">2018-19</td>
+                            <td class="border border-gray-300 px-4 py-2">606</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </section>
+
+        <!-- Placement Staff -->
+        <section class="mb-16">
+            <h2 class="text-3xl font-bold text-gray-800 text-center mb-8">Placement Staff</h2>
+            <div class="overflow-x-auto">
+                <table class="table-auto w-full border-collapse border border-gray-300">
+                    <thead class="bg-blue-100">
+                        <tr>
+                            <th class="border border-gray-300 px-4 py-2 text-left">S.No.</th>
+                            <th class="border border-gray-300 px-4 py-2 text-left">Name of the Staff</th>
+                            <th class="border border-gray-300 px-4 py-2 text-left">Designation</th>
+                            <th class="border border-gray-300 px-4 py-2 text-left">Qualifications</th>
+                            <th class="border border-gray-300 px-4 py-2 text-left">Mobile No.</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td class="border border-gray-300 px-4 py-2">1</td>
+                            <td class="border border-gray-300 px-4 py-2">Mr. G. Ramesh Babu</td>
+                            <td class="border border-gray-300 px-4 py-2">Head- Training & Placements</td>
+                            <td class="border border-gray-300 px-4 py-2">MBA</td>
+                            <td class="border border-gray-300 px-4 py-2">9246620777</td>
+                        </tr>
+                        <tr>
+                            <td class="border border-gray-300 px-4 py-2">2</td>
+                            <td class="border border-gray-300 px-4 py-2">Mr. K. Naresh Kumar</td>
+                            <td class="border border-gray-300 px-4 py-2">Asst. Training & Placement Officer</td>
+                            <td class="border border-gray-300 px-4 py-2">MBA</td>
+                            <td class="border border-gray-300 px-4 py-2">7893656735</td>
+                        </tr>
+                        <tr>
+                            <td class="border border-gray-300 px-4 py-2">3</td>
+                            <td class="border border-gray-300 px-4 py-2">Ms. L. Sudheera</td>
+                            <td class="border border-gray-300 px-4 py-2">Soft Skills Trainer</td>
+                            <td class="border border-gray-300 px-4 py-2">MBA</td>
+                            <td class="border border-gray-300 px-4 py-2">9640958999</td>
+                        </tr>
+                        <tr>
+                            <td class="border border-gray-300 px-4 py-2">4</td>
+                            <td class="border border-gray-300 px-4 py-2">Mr. K. Sai Devan</td>
+                            <td class="border border-gray-300 px-4 py-2">Soft Skills Trainer</td>
+                            <td class="border border-gray-300 px-4 py-2">MBA</td>
+                            <td class="border border-gray-300 px-4 py-2">7013506746</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </section>
+
     </div>
-
-    <!-- About College -->
-
-    <section class="bg-white">
-        <div class="gap-16 items-center py-8 px-4 mx-auto max-w-screen-xl lg:grid lg:grid-cols-2 lg:py-16 lg:px-6">
-            <div class="font-medium text-gray-500 sm:text-lg">
-                <h2 class="mb-4 text-3xl tracking-tight font-bold text-gray-900">About Us</h2>
-                <p class="mb-4 text-justify">Prasad V Potluri Siddhartha Institute of Technology (PVPSIT), established
-                    in 1998, is a premier self-financed institution known for academic excellence. Located in Kanuru,
-                    Vijayawada, the college offers undergraduate and postgraduate programs in various engineering
-                    disciplines and MBA. It is autonomous, AICTE-approved, affiliated with JNTUK, and accredited by NAAC
-                    with an A+ grade. PVPSIT has a strong focus on research, innovation, and entrepreneurship, with 60
-                    industry MOUs and a top placement package of 44 lakhs. The institution emphasizes holistic
-                    development through mentoring, extracurricular activities, and student leadership. Gender equity and
-                    social responsibility are key values, with opportunities in sports, cultural events, and community
-                    service.</p>
-            </div>
-            <div class="grid grid-cols-2 gap-4 mt-8">
-                <img class="w-full rounded-lg" src="assets/about1.png" alt="office content 1">
-                <img class="mt-4 w-full lg:mt-10 rounded-lg" src="assets/about2.png" alt="office content 2">
-            </div>
-        </div>
-    </section>
-
-    <!-- Courses Offered -->
-    <div class="bg-white px-4 hidden sm:block">
-        <h1 class="mb-4 text-3xl tracking-tight font-bold text-gray-900">Courses Offered</h1>
-        <div class="flex flex-wrap gap-4 items-between justify-start md:justify-center">
-            <div class="bg-gray-100 p-3">
-                B.Tech - CSE
-            </div>
-            <div class="bg-gray-100 p-3">
-                B.Tech - AIML/DS
-            </div>
-            <!-- <div class="bg-gray-100 p-3">
-                B.Tech - CSE - AIML
-            </div>
-            <div class="bg-gray-100 p-3">
-                B.Tech - CSE - DS
-            </div> -->
-            <div class="bg-gray-100 p-3">
-                B.Tech - IT
-            </div>
-            <div class="bg-gray-100 p-3">
-                B.Tech - ECE
-            </div>
-            <div class="bg-gray-100 p-3">
-                B.Tech - ME
-            </div>
-            <div class="bg-gray-100 p-3">
-                B.Tech - EEE
-            </div>
-            <div class="bg-gray-100 p-3">
-                B.Tech - CE
-            </div>
-            <div class="bg-gray-100 p-3">
-                M.Tech
-            </div>
-            <div class="bg-gray-100 p-3">
-                MBA
-            </div>
-        </div>
-    </div>
-
-    <!-- Placements -->
-    <section class="bg-white mt-4">
-        <div class="py-8 lg:py-6 mx-auto max-w-screen-xl px-2">
-            <h1 class="mb-4 text-3xl tracking-tight font-bold text-gray-900">Our Recruiters</h1>
-            <div class="flex flex-wrap justify-center items-center gap-1">
-                <p href="#" class="flex justify-center items-center mx-4">
-                    <img class="h-10 md:h-14" src="assets/companies/amazon.png">
-                </p>
-                <p href="#" class="flex justify-center items-center mx-4">
-                    <img class="h-8 md:h-14 " src="assets/companies/tcs.png">
-                </p>
-                <p href="#" class="flex justify-center items-center mx-4">
-                    <img class="h-6 md:h-10 " src="assets/companies/capgemini.png">
-                </p>
-                <p href="#" class="flex justify-center items-center mx-4">
-                    <img class="h-6 md:h-10 " src="assets/companies/accenture.png">
-                </p>
-                <p href="#" class="flex justify-center items-center mx-4">
-                    <img class="h-6 md:h-12 " src="assets/companies/walmart.png">
-                </p>
-                <p href="#" class="flex justify-center items-center mx-4">
-                    <img class="h-8 md:h-12 " src="assets/companies/value labs.png">
-                </p>
-            </div>
-        </div>
-    </section>
-
-
-
 
     <!-- Footer  -->
-    <div id="footerSec" class="bg-white px-4 pt-16 mx-auto sm:max-w-xl md:max-w-full lg:max-w-screen-xl md:px-24 lg:px-8">
+    <div id="footerSec"
+        class="bg-white px-4 pt-16 mx-auto sm:max-w-xl md:max-w-full lg:max-w-screen-xl md:px-24 lg:px-8">
         <div class="grid gap-16 row-gap-10 mb-8 lg:grid-cols-6">
             <div class="md:max-w-md lg:col-span-2">
                 <a href="https://www.pvpsiddhartha.ac.in/index.html" aria-label="Go home"
