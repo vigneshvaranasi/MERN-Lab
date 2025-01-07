@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Client Server Communication</title>
+  </head>
+  <script>
+    async function fetchData() {
+      const res = await fetch('http://localhost:5000')
+      const data = await res.text()
+      await console.log(data)
+      let resHTML = document.querySelector('.serverResponse')
+      resHTML.innerHTML = data
+    }
+  </script>
+  <body>
+    <h1>Client Connected to Node JS Server</h1>
+    <button onclick="fetchData()">Get Data from Server</button>
+    <h1 class="serverResponse"></h1>
+  </body>
+</html>

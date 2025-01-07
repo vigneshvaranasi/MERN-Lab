@@ -1,0 +1,9 @@
+{
+  "name": "package-publish-testing",
+  "version": "1.0.3",
+  "description": "Simple Package Created for testing",
+  "license": "ISC",
+  "author": "vvsvignesh",
+  "type": "module",
+  "main": "index.js"
+}
