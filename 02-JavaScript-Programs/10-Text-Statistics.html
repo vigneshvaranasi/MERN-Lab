@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Text Statistics</title>
+    <script>
+        function calculateStats() {
+            const text = document.getElementById("textInput").value;
+            const numCharacters = text.length;
+            const words = text.trim().split(/\s+/);
+            const numWords = text.trim() ? words.length : 0;
+            const lines = text.split("\n");
+            const numLines = lines.length;
+            alert(`Characters: ${numCharacters}\nWords: ${numWords}\nLines: ${numLines}`);
+        }
+    </script>
+</head>
+<body>
+    <h1>Text Statistics Calculator</h1>
+    <textarea id="textInput" rows="10" cols="50" placeholder="Enter your text here..."></textarea>
+    <br>
+    <button onclick="calculateStats()">Submit</button>
+</body>
+</html>
