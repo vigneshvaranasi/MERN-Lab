@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Input-Output</title>
+</head>
+<script>
+    function handleSubmit() {
+        event.preventDefault();
+        var name = document.getElementById('name').value;
+        document.querySelector('.output').textContent = 'Hello, ' + name + '!';
+    }
+</script>
+<body>
+    <form onsubmit="handleSubmit()">
+        <label for="name">Enter your name: </label>
+        <input type="text" id="name" name="name">
+        <input type="submit" value="Submit">
+    </form>    
+    </form>    
+    <h1 class="output"></h1>
+</body>
+</html>

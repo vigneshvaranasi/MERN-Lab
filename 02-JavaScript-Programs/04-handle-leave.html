@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Welcome and Goodbye</title>
+    <script>
+      let userName = prompt('Please enter your name:')
+
+      if (userName) {
+        alert(`Welcome ${userName}!`)
+      }
+
+      window.onbeforeunload = function () {
+        if (userName) {
+          return `Goodbye ${userName}`
+        }
+      }
+    </script>
+  </head>
+  <body>
+    <h1>Welcome Page</h1>
+    <p>Use the browser's navigation buttons to trigger the goodbye alert.</p>
+    <a href="https://google.com">click here to got to google</a>
+  </body>
+</html>

@@ -1,9 +1,13 @@
 {
   "name": "package-publish-testing",
-  "version": "1.0.3",
+  "version": "1.0.5",
   "description": "Simple Package Created for testing",
   "license": "ISC",
   "author": "vvsvignesh",
   "type": "module",
-  "main": "index.js"
+  "main": "index.js",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/vigneshvaranasi/MERN-Lab.git#main"
+  }
 }

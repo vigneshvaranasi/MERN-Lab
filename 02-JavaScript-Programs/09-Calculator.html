@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator</title>
+</head>
+<body>
+    <input type="text" id="num1" placeholder="Enter first number">
+    <input type="text" id="num2" placeholder="Enter second number">
+    <p id="result"></p>
+    <button onclick="Add()">+</button>
+    <button onclick="Sub()">-</button>
+    <button onclick="Mul()">*</button>
+    <button onclick="Div()">/</button>
+    <script>
+        function Add(){ 
+            let a=document.getElementById("num1").value;
+            let b=document.getElementById("num2").value;
+            let  result=parseInt(a)+parseInt(b);
+            
+            document.getElementById("result").innerHTML = `Result of ${a} + ${b} is ${result}`;
+        }
+        function Sub(){ 
+            let a=document.getElementById("num1").value;
+            let b=document.getElementById("num2").value;
+            let result=parseInt(a)-parseInt(b);
+        
+            document.getElementById("result").innerHTML = `Result of ${a} - ${b} is ${result}`;
+        }
+        function Mul(){ 
+            let a=document.getElementById("num1").value;
+            let b=document.getElementById("num2").value;
+            let result=parseInt(a)*parseInt(b);
+            document.getElementById("result").innerHTML = `Result of ${a} * ${b} is ${result}`;
+        }
+        function Div(){ 
+            let a=document.getElementById("num1").value;
+            let b=document.getElementById("num2").value;
+            let result=parseInt(a)/parseInt(b);
+             document.getElementById("result").innerHTML = `Result of ${a} / ${b} is ${result}`; 
+        }
+       
+    </script>
+
+</body>
+</html>

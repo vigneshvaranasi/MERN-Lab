@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Number to words</title>
+</head>
+<body>
+    <input type="text" id="number" placeholder="Enter a number">
+    <button onclick="convert()">Convert</button>
+    <p id="result"></p>
+    <script>
+        function convert() {
+            var number = document.getElementById("number").value;
+            var result = document.getElementById("result");
+            if (isNaN(number)) {
+                result.innerText = "Not a number";
+            } else if (number < 0 || number > 999) {
+                result.innerText = "Out of range";
+            } 
+            else {
+                var words = ["", "One", "Two", "Three", "Four", "Five", "Six", "Seven", "Eight", "Nine", "Ten",
+                    "Eleven", "Twelve", "Thirteen", "Fourteen", "Fifteen", "Sixteen", "Seventeen", "Eighteen", "Nineteen"];
+                var tens = ["", "", "Twenty", "Thirty", "Forty", "Fifty", "Sixty", "Seventy", "Eighty", "Ninety"];
+                var num = parseInt(number);
+                var n = num.toString().length;
+                var str = "";
+                if (n == 1) {
+                    str = words[num];
+                } else if (n == 2) {
+                    if (num < 20) {
+                        str = words[num];
+                    } else {
+                        var first = parseInt(num / 10);
+                        var second = num % 10;
+                        str = tens[first] + " " + words[second];
+                    }
+                } else {
+                    var first = parseInt(num / 100);
+                    var second = num % 100;
+                    str = words[first] + " Hundred";
+                    if (second != 0) {
+                        str += " and ";
+                        if (second < 20) {
+                            str += words[second];
+                        } else {
+                            var first = parseInt(second / 10);
+                            var second = second % 10;
+                            str += tens[first] + " " + words[second];
+                        }
+                    }
+                }
+            }
+                result.innerText = str;
+            }
+    </script>
+    
+</body>
+</html>
