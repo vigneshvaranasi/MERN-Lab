@@ -1,0 +1,25 @@
+### GET Request
+GET http://localhost:5000
+### GET all Employees
+GET http://localhost:5000/getEmployees
+
+### Add Employee
+POST http://localhost:5000/addEmployee
+Content-Type: application/json
+
+{
+    "id": 7,
+    "name": "Afzal",
+    "salary": 30000
+}
+### Add Employee
+POST http://localhost:5000/addEmployee
+Content-Type: application/json
+
+{
+    "id": 5,
+    "name": "Dhanush",
+    "salary": 10000
+}
+
+
