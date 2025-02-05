@@ -1,6 +1,6 @@
 ### GET Request
 GET http://localhost:5000
-### GET all Employees
+### GET all 
 GET http://localhost:5000/getEmployees
 
 ### Add Employee

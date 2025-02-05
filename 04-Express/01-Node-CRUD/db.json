@@ -1,1 +1,22 @@
-[{"id":2,"name":"Eswar","dept":"IT"},{"id":3,"name":"Pavan","dept":"ECE"},{"id":4,"name":"Sumanth","dept":"CE"},{"id":5,"name":"Dhanush","dept":"CSE"},{"id":1,"name":"Vignesh","dept":"CSE"}]
+[
+  {
+    "id": 2,
+    "name": "Eswar",
+    "dept": "IT"
+  },
+  {
+    "id": 3,
+    "name": "Pavan",
+    "dept": "ECE"
+  },
+  {
+    "id": 4,
+    "name": "Sumanth",
+    "dept": "CE"
+  },
+  {
+    "id": 5,
+    "name": "Dhanush",
+    "dept": "CSE"
+  }
+]
