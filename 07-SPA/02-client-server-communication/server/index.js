@@ -3,7 +3,7 @@ const cors = require('cors');
 
 const app = express();
 app.use(cors({
-    origin: 'http:localhost:3000',
+    origin: '*',
     methods: ['GET', 'POST'],
     allowedHeaders: ['Content-Type', 'Authorization']
 }));
@@ -42,5 +42,5 @@ app.get('/users', (req, res) => {
 });
 
 app.listen(5000,()=>{
-    console.log("Server is running on port http:localhost:5000");
+    console.log("Server is running on port http://localhost:5000");
 })
