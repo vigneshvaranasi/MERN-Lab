@@ -1,10 +1,10 @@
-import React from 'react'
-import { useCounter } from './hooks/useCounter'
+import React, { useContext } from 'react'
 import Incrementer from './components/Incrementer'
 import DecrementerComp from './components/DecrementerComp'
+import {CounterContext} from './store/CounterProvider'
 
 function App () {
-  const { count } = useCounter()
+  const {count} = useContext(CounterContext)
   return (
     <div>
       <h1>useContext</h1>

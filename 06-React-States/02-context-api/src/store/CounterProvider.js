@@ -10,6 +10,5 @@ const CounterProvider = ({ children }) => {
     <CounterContext.Provider value={{count,setCount}}>{children}</CounterContext.Provider>
   )
 }
-
-export default CounterProvider
 export { CounterContext }
+export default CounterProvider

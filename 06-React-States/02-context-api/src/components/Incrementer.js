@@ -1,8 +1,8 @@
-import React from 'react'
-import { useCounter } from '../hooks/useCounter'
+import React, { useContext } from 'react'
+import {CounterContext} from '../store/CounterProvider'
 
 function Incrementer () {
-  const { setCount } = useCounter()
+  const { setCount } = useContext(CounterContext)
   return (
     <div>
       <button onClick={() => setCount(prev => prev + 1)}>Increment</button>

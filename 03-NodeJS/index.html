@@ -9,9 +9,8 @@
     async function fetchData() {
       const res = await fetch('http://localhost:5000')
       const data = await res.text()
-      await console.log(data)
-      let resHTML = document.querySelector('.serverResponse')
-      resHTML.innerHTML = data
+      console.log(data)
+      let resHTML = document.querySelector('.serverResponse').innerHTML = data
     }
   </script>
   <body>
